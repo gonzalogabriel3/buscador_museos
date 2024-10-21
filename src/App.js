@@ -1,24 +1,19 @@
-import logo from './logo.svg';
+/* eslint-disable jsx-a11y/alt-text */
 import './App.css';
+import Museos from "./components/Museos.jsx"
 
-function App() {
+
+function App () {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/*Acomodar con Flex*/}
+      <div style={{display:"flex",flexDirection:"row"}}>
+        <img  width={60} src='https://upload.wikimedia.org/wikipedia/commons/f/ff/Coat_of_arms_of_Argentina.svg' />
+        <h4 >&nbsp;Buscador de Museos Nacionales de la Republica Argentina</h4>
+      </div>
+      <Museos></Museos>
+    </>
   );
 }
 
